@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>aula formulário</title>
+</head>
+<body>
+    <h1>
+        Primeiro Formulário
+    </h1>
+    <form action="" method="get" class="form">
+        <label>Insira seu número: <input type="text" name="telefone" placeholder="(xx)xxxxxxxxx" 
+        size="30" maxlength="13"></label>
+        <br><br>
+        <label for="Senha"> senha:</label>
+        <input type="password" placeholder="Informe a sua senha" id="senha">
+        <br><br>
+        <label>Natural do Brasil<input type="checkbox" name="bras"></label>
+
+    <br>
+    <fieldset class="form">
+        <legend>Sexo</legend>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="sexo" value="M" id="masc">
+        <label for="masc">Feminino</label>
+        <input type="radio" name="sexo" value="F" id="fem">
+    </fieldset>
+    <br><br>
+    <label for="mensagem">Escreva uma mensagem</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" rows="20" cols="100"> 
+    </textarea>
+    <fieldset>
+        <legend>Estado</legend>
+        <select name="estado">
+            <option selected disabled>Selecione </option>
+            <option value="RO">Rondônia</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="AM">Amazonas</option>
+            <option value="AL">Alagoas</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MA">Maranhão</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Data</legend>
+        <input type="date">
+    </fieldset>
+    <input type="submit" value="Enviar"> &nbsp; &nbsp;
+    <input type="reset" value="Limpar">
+</form>
+</body>
+</html>
